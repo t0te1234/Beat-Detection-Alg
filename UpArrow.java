@@ -1,0 +1,25 @@
+import java.awt.image.BufferedImage; 
+import javax.imageio.ImageIO;
+import java.io.File;
+
+class UpArrow extends MovingObject{
+  
+  UpArrow(int x,int y,int height,int length){
+    super(x,y,length,height);
+  }
+  
+  UpArrow(int y){
+    super(370,y,100,100);
+    loadSprite();
+  }
+  
+  
+  public void loadSprite(){
+    try{
+      setSprite(ImageIO.read(new File("uparrow.png")));
+    } catch(Exception e) { 
+      System.out.println("error loading uparrow sprite");
+    }
+  } 
+  
+}

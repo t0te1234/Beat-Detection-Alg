@@ -1,0 +1,15 @@
+public class GameLoop implements Runnable{
+  
+  //Constructor
+  GameLoop(){
+  }
+  
+  public void run(){
+            
+    while(true/*game Condition here*/){
+          
+      update();
+    }
+  }
+  
+}

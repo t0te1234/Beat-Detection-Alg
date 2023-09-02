@@ -1,0 +1,20 @@
+class ArrowListener implements KeyListener{
+  
+  public void keyPressed(KeyEvent e){
+    
+    if(e.getKeyCode() == KeyEvent.KP_UP){
+      
+    }
+    if(e.getKeyCode() == KeyEvent.KP_RIGHT){
+      
+    }
+    if(e.getKeyCode() == KeyEvent.KP_DOWN){
+      
+    }
+    if(e.getKeyCode() == KeyEvent.KP_LEFT){
+      
+    }
+    
+  }
+  
+}

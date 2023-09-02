@@ -1,0 +1,29 @@
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+class BeatMap{
+  
+  //Variables
+  ArrayList<MovingObject> objects = new ArrayList<MovingObject>();
+  String filename;
+  
+  BeatMap(String filename){
+    this.filename = filename;
+    UpArrow arrow = new UpArrow();
+    DownArrow arrow2 = new DownArrow();
+    LeftArrow arrow3 = new LeftArrow();
+    RightArrow arrow4 = new RightArrow();
+    objects.add(arrow);
+    objects.add(arrow2);
+    objects.add(arrow3);
+    objects.add(arrow4);
+  }
+  
+  public void drawObjects(Graphics g){
+    for (int i = 0; i < objects.size() ; i++){
+      (objects.get(i)).draw(g);
+    }
+  }
+  
+  
+}
